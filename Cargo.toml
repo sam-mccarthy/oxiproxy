@@ -5,4 +5,15 @@ edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
+# TODO: Organize these!
 [dependencies]
+tokio = { version = "1.36.0", features = ["rt", "rt-multi-thread", "macros"] }
+tokio-stream = { version = "0.1.15", features = ["net"] }
+rustls-acme = { version = "0.9.2", features = ["tokio"] }
+serde_yaml = "0.9.33"
+http = { version = "1.1.0", features = [] }
+hyper = { version = "1.2.0", features = [] }
+rustls = { version = "0.23.1", features = [] }
+tokio-rustls = { version = "0.25.0", features = [] }
+rustls-pemfile = "2.1.1"
+regex = "1.10.3"
